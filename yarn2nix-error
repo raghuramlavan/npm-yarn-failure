@@ -30,6 +30,5 @@ yarn2nix > yarn.nix
   stderr: null
 }
 
-
-
 ```
+- throwns error in the Github based dependency
