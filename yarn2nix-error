@@ -1,0 +1,35 @@
+```
+yarn2nix > yarn.nix
+
+<ref *1> Error: spawnSync nix-prefetch-git ENOENT
+    at Object.spawnSync (internal/child_process.js:1074:20)
+    at spawnSync (child_process.js:746:24)
+    at execFileSync (child_process.js:792:15)
+    at prefetchgit (/nix/store/pz3gpdqvfv6c1wa6c5hgybg1jjvr3863-yarn2nix-1.0.0/libexec/yarn2nix/deps/yarn2nix/lib/generateNix.js:36:5)
+    at fetchgit (/nix/store/pz3gpdqvfv6c1wa6c5hgybg1jjvr3863-yarn2nix-1.0.0/libexec/yarn2nix/deps/yarn2nix/lib/generateNix.js:57:23)
+    at /nix/store/pz3gpdqvfv6c1wa6c5hgybg1jjvr3863-yarn2nix-1.0.0/libexec/yarn2nix/deps/yarn2nix/lib/generateNix.js:90:14
+    at _map (/nix/store/pz3gpdqvfv6c1wa6c5hgybg1jjvr3863-yarn2nix-1.0.0/libexec/yarn2nix/node_modules/ramda/src/internal/_map.js:6:19)
+    at map (/nix/store/pz3gpdqvfv6c1wa6c5hgybg1jjvr3863-yarn2nix-1.0.0/libexec/yarn2nix/node_modules/ramda/src/map.js:64:14)
+    at /nix/store/pz3gpdqvfv6c1wa6c5hgybg1jjvr3863-yarn2nix-1.0.0/libexec/yarn2nix/node_modules/ramda/src/internal/_dispatchable.js:41:15
+    at Object.f2 [as map] (/nix/store/pz3gpdqvfv6c1wa6c5hgybg1jjvr3863-yarn2nix-1.0.0/libexec/yarn2nix/node_modules/ramda/src/internal/_curry2.js:29:14) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawnSync nix-prefetch-git',
+  path: 'nix-prefetch-git',
+  spawnargs: [
+    '--rev',
+    '25845a49a00aa2d2c985a5149b97c86a1fcdc75a',
+    'https://github.com/brettz9/sync-promise.git'
+  ],
+  error: [Circular *1],
+  status: null,
+  signal: null,
+  output: null,
+  pid: 21375,
+  stdout: null,
+  stderr: null
+}
+
+
+
+```
