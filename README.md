@@ -1,5 +1,5 @@
 # npm-yarn-failure
-'''
+```
 trying https://registry.yarnpkg.com/node-gyp/-/node-gyp-5.1.1.tgz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -29,4 +29,4 @@ error: 1 dependencies of derivation '/nix/store/56abifvm1xxalz4a104l9awnp1ff3y2l
     6     noop-fn "^1.0.0"
     7     sqlite3 "^4.0.0"
     8     tiny-queue "^0.2.1"
-'''
+```
