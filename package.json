@@ -1,0 +1,42 @@
+{
+  "name": "valos-kernel-vault",
+  "version": "0.35.0",
+  "valos": {
+    "type": "vault",
+    "domain": "@valos/kernel"
+  },
+  "description": "ValOS common infrastructure tools and libraries monorepository.",
+  "license": "MIT",
+  "author": "Valaa Technologies Ltd",
+  "private": true,
+  "repository": "https://github.com/valaatech/kernel",
+  "workspaces": [
+    "packages/*",
+    "opspaces/*",
+    "workers/*"
+  ],
+  "scripts": {
+    "vlm": "vlm ",
+    "start": "vlm rouse-revealer ",
+    "dev": "TARGET_ENV=local vlm rouse-revealer ",
+    "prod": "TARGET_ENV=production vlm rouse-revealer ",
+    "clean": "lerna clean --yes",
+    "eslint": "eslint .",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "lint": "npm run eslint",
+    "test": "jest",
+    "build": "webpack ",
+    "assemble-packages": "vlm assemble-packages ",
+    "publish-packages": "vlm publish-packages "
+  },
+  "devDependencies": {
+    "@cyclonedx/bom": "^0.2.6",
+    "@valos/inspire": "^0.35.0-rc.12",
+    "@valos/kernel": "^0.35.0-rc.12",
+    "@valos/toolset-revealer": "^0.35.0-rc.12",
+    "@valos/type-vault": "^0.35.0-rc.12",
+    "valma": "^0.35.0-rc.12",
+    "xml-js": "^1.6.11"
+  },
+  "dependencies": {}
+}
